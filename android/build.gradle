@@ -2,7 +2,7 @@ group = "com.application.dynamic_app_icon_flutter_plus"
 version = "1.0-SNAPSHOT"
 
 buildscript {
-    ext.kotlin_version = "2.3.20"
+    ext.kotlin_version = "2.3.21"
     repositories {
         google()
         mavenCentral()
@@ -27,7 +27,7 @@ apply plugin: "kotlin-android"
 android {
     namespace = "com.application.dynamic_app_icon_flutter_plus"
 
-    compileSdk = 36
+    compileSdk = 37
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_21
