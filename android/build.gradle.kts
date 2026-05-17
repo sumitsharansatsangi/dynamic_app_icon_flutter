@@ -1,8 +1,5 @@
-import org.jetbrains.kotlin.gradle.dsl.JvmTarget
-
 plugins {
     id("com.android.library")
-    id("org.jetbrains.kotlin.android") version "2.3.21"
 }
 
 group = "com.application.dynamic_app_icon_flutter_plus"
@@ -15,7 +12,6 @@ repositories {
 
 android {
     namespace = "com.application.dynamic_app_icon_flutter_plus"
-
     compileSdk = 37
 
     compileOptions {
@@ -25,11 +21,11 @@ android {
 
     sourceSets {
         getByName("main") {
-            java.srcDirs("src/main/kotlin")
+            kotlin.srcDirs("src/main/kotlin")
         }
 
         getByName("test") {
-            java.srcDirs("src/test/kotlin")
+            kotlin.srcDirs("src/test/kotlin")
         }
     }
 
@@ -62,7 +58,7 @@ android {
 
 kotlin {
     compilerOptions {
-        jvmTarget.set(JvmTarget.JVM_21)
+        jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_21
     }
 }
 

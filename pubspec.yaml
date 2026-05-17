@@ -23,7 +23,7 @@ dependencies:
   flutter:
     sdk: flutter
   plugin_platform_interface:
-    git: http://github.com/kumsumit/plugin_platform_interface.git
+    git: https://github.com/kumsumit/plugin_platform_interface.git
 
 dev_dependencies:
   flutter_test:
